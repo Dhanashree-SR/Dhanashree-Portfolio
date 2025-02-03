@@ -4,7 +4,21 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import React from "react"
 
-const timelineData = {
+type TimelineItem = {
+  title?: string
+  company?: string
+  degree?: string
+  institution?: string
+  date: string
+  description: string
+}
+
+type TimelineData = {
+  workExperience: TimelineItem[]
+  education: TimelineItem[]
+}
+
+const timelineData: TimelineData = {
   workExperience: [
     {
       title: "Data Analyst Intern",
@@ -14,7 +28,7 @@ const timelineData = {
         "• Participating in a remote internship focused on end-to-end unguided projects. • Leveraging provided resources to develop skills in 𝗦𝗤𝗟, 𝗘𝘅𝗰𝗲𝗹, 𝗮𝗻𝗱 𝗣𝗼𝘄𝗲𝗿 𝗕𝗜, while gaining hands-on experience in data cleaning, visualization, and dashboard creation. • Engaging independently with real-world datasets to deliver insights and support data-driven decisions."
     },
     {
-      title: "FronEnd Developer Intern",
+      title: "FrontEnd Developer Intern",
       company: "Nammacart",
       date: "Jun 2023 - Jul 2023",
       description:
@@ -33,7 +47,7 @@ const timelineData = {
 }
 
 const TimelineSection = () => {
-  const [activeTab, setActiveTab] = useState("workExperience")
+  const [activeTab, setActiveTab] = useState<"workExperience" | "education">("workExperience")
 
   return (
     <section id="timeline" className="py-16 bg-gray-900">
@@ -66,7 +80,7 @@ const TimelineSection = () => {
         </div>
         <div className="relative">
           <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-blue-500"></div>
-          {timelineData[activeTab].map((item, index) => (
+          {timelineData[activeTab].map((item: TimelineItem, index: number) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
@@ -89,9 +103,16 @@ const TimelineSection = () => {
                   <h3 className="text-lg md:text-xl font-bold text-white">{item.title || item.degree}</h3>
                   <p className="font-semibold text-blue-400">{item.company || item.institution}</p>
                   <p className="text-sm text-gray-200">{item.date}</p>
-                  <p className="mt-0 text-sm md:text-base text-gray-300">{item.description.split("•").map((line, i) => (<React.Fragment key={i}> {i > 0 && "• "}{line.trim()} <br/><br/>
-        </React.Fragment>
-      ))}</p>
+                  <p className="mt-0 text-sm md:text-base text-gray-300">
+                    {item.description.split("•").map((line, i) => (
+                      <React.Fragment key={i}>
+                        {i > 0 && "• "}
+                        {line.trim()}
+                        <br />
+                        <br />
+                      </React.Fragment>
+                    ))}
+                  </p>
                 </div>
               </div>
             </motion.div>
@@ -103,4 +124,3 @@ const TimelineSection = () => {
 }
 
 export default TimelineSection
-
