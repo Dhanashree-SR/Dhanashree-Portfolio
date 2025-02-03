@@ -37,9 +37,9 @@ const Navbar = () => {
   }, [handleScroll]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId) as HTMLElement; // Type cast to HTMLElement
+    const element = document.getElementById(sectionId) as HTMLElement; // Explicitly cast to HTMLElement
     if (element) {
-      const offset = element.getBoundingClientRect().top + window.scrollY; // Use getBoundingClientRect().top
+      const offset = element.getBoundingClientRect().top + window.scrollY; // Use getBoundingClientRect() for position
       const headerHeight = document.querySelector("nav")?.clientHeight || 0;
       window.scrollTo({ top: offset - headerHeight, behavior: "smooth" });
     }
