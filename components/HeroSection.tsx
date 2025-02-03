@@ -1,13 +1,19 @@
 "use client"
 import React, { useState, useEffect } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBitcoin, faCreativeCommonsSamplingPlus, faGoogle, faGooglePlus, faMailchimp } from '@fortawesome/free-brands-svg-icons';
-import { faGoogleDrive } from "@fortawesome/free-brands-svg-icons/faGoogleDrive";
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { faMarkdown } from "@fortawesome/free-brands-svg-icons/faMarkdown";
 import { motion } from "framer-motion"
+import Image from "next/image"
 
-const TypedText = ({ strings, typingSpeed = 150, deletingSpeed = 100, delayBetweenStrings = 1000 }) => {
+// Define prop types for TypedText
+interface TypedTextProps {
+  strings: string[];
+  typingSpeed?: number;
+  deletingSpeed?: number;
+  delayBetweenStrings?: number;
+}
+
+const TypedText: React.FC<TypedTextProps> = ({ strings, typingSpeed = 150, deletingSpeed = 100, delayBetweenStrings = 1000 }) => {
   const [currentStringIndex, setCurrentStringIndex] = useState(0)
   const [currentText, setCurrentText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
@@ -41,17 +47,19 @@ const TypedText = ({ strings, typingSpeed = 150, deletingSpeed = 100, delayBetwe
   return <span>{currentText}</span>
 }
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-start overflow-hidden pl-12 md:pl-24 lg:pl-36">
-    <div className="absolute inset-0 z-0">
-      <img 
-        src="/hero-bg.jpg" 
-        alt="Background Image" 
-        className="w-full h-full object-cover object-left md:object-cover lg:object-contain"
-        loading="eager"
-      />
-    </div>
+      <div className="absolute inset-0 z-0">
+        <Image 
+          src="/hero-bg.jpg" 
+          alt="Background Image" 
+          layout="fill" 
+          objectFit="cover"
+          objectPosition="left" 
+          loading="eager"
+        />
+      </div>
       <div className="relative z-10 text-left">
         <motion.h1 initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="text-3xl md:text-3xl lg:text-4xl font-bold mb-4 text-white" >
           Hi, My name is Dhanashree S R
@@ -63,12 +71,13 @@ const HeroSection = () => {
           </span>
         </motion.h2>
         <motion.p 
-  initial={{ opacity: 0, y: 50 }} 
-  animate={{ opacity: 1, y: 0 }} 
-  transition={{ duration: 0.8, delay: 0.4 }} 
-  className="text-xl md:text-xl lg:text-xl text-white-300 mb-8 w-full md:w-3/4 xl:w-3/4 pr-8"
->Turning Data into Strategic Insights | Skilled in Excel, SQL & Power BI.
-</motion.p>
+          initial={{ opacity: 0, y: 50 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 0.4 }} 
+          className="text-xl md:text-xl lg:text-xl text-white-300 mb-8 w-full md:w-3/4 xl:w-3/4 pr-8"
+        >
+          Turning Data into Strategic Insights | Skilled in Excel, SQL & Power BI.
+        </motion.p>
         <motion.div 
           initial={{ opacity: 0, y: 50 }} 
           animate={{ opacity: 1, y: 0 }} 
@@ -77,35 +86,34 @@ const HeroSection = () => {
         >
           <a href="https://github.com/SR-Dhana-shree/" target="_blank" rel="noopener noreferrer" className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
             <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
-              <img src="/github.svg" alt="GitHub Logo" className="w-8 h-8" />
+              <Image src="/github.svg" alt="GitHub Logo" width={30} height={30} />
             </div>
           </a>
           <a href="mailto:dhanashreesr5@gmail.com" className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
-        <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
-          <img src="/gmail.svg" alt="Gmail Logo" className="w-8 h-8" />
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/dhanashree-sr/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
-        <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
-          <img src="/linkedin.svg" alt="LinkedIn Logo" className="w-8 h-8" />
-        </div>
-      </a>
-    </motion.div>
+            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
+              <Image src="/gmail.svg" alt="Gmail Logo" width={30} height={30} />
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/dhanashree-sr/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
+            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
+              <Image src="/linkedin.svg" alt="LinkedIn Logo" width={30} height={30} />
+            </div>
+          </a>
+        </motion.div>
 
-    <motion.div 
-      initial={{ opacity: 0, y: 50 }} 
-      animate={{ opacity: 1, y: 0 }} 
-      transition={{ duration: 0.8, delay: 0.8 }} 
-      className="mt-8"
-    >
-      <a href="\Dhanashree S R da.pdf" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
-        <FontAwesomeIcon icon={faArrowDown} className="mr-2" /> Download Resume
-      </a>
-    </motion.div>
-  </div>
-</section>
-
-)
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, delay: 0.8 }} 
+          className="mt-8"
+        >
+          <a href="\Dhanashree S R da.pdf" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <FontAwesomeIcon icon={faArrowDown} className="mr-2" /> Download Resume
+          </a>
+        </motion.div>
+      </div>
+    </section>
+  )
 }
 
 export default HeroSection
