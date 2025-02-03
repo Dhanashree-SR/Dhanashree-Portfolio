@@ -88,7 +88,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }} 
           className="flex mt-4"
         >
-          <a href="https://github.com/SR-Dhana-shree/" target="_blank" rel="noopener noreferrer" className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
+          <a href="https://github.com/Dhanashree-SR/" target="_blank" rel="noopener noreferrer" className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
             <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
               <Image src="/github.svg" alt="GitHub Logo" width={30} height={30} />
             </div>
@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }} 
           className="mt-8"
         >
-          <a href="/Dhanashree_S_R_Resume.pdf" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+          <a href="/Dhanashree sr da.pdf" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
             <FontAwesomeIcon icon={faArrowDown} className="mr-2" /> Download Resume
           </a>
         </motion.div>
