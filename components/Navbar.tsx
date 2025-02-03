@@ -37,9 +37,9 @@ const Navbar = () => {
   }, [handleScroll]);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId) as HTMLElement; // Explicitly cast to HTMLElement
+    const element = document.getElementById(sectionId);
     if (element) {
-      const offset = element.getBoundingClientRect().top + window.scrollY; // Use getBoundingClientRect() for position
+      const offset = (element as HTMLElement).offsetTop + (element.offsetParent ? (element.offsetParent as HTMLElement).offsetTop : 0);
       const headerHeight = document.querySelector("nav")?.clientHeight || 0;
       window.scrollTo({ top: offset - headerHeight, behavior: "smooth" });
     }
@@ -62,9 +62,7 @@ const Navbar = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className={`ml-4 px-3 py-2 rounded-md text-sm font-medium transition-all ${
-                  activeSection === item ? "text-blue-400 bg-gray-800" : "text-gray-300 hover:text-white hover:bg-gray-700"
-                }`}
+                className={`ml-4 px-3 py-2 rounded-md text-sm font-medium transition-all ${activeSection === item ? "text-blue-400 bg-gray-800" : "text-gray-300 hover:text-white hover:bg-gray-700"}`}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
@@ -88,9 +86,7 @@ const Navbar = () => {
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all ${
-                  activeSection === item ? "text-blue-400 bg-gray-800" : "text-gray-300 hover:text-white hover:bg-gray-700"
-                }`}
+                className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-all ${activeSection === item ? "text-blue-400 bg-gray-800" : "text-gray-300 hover:text-white hover:bg-gray-700"}`}
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
