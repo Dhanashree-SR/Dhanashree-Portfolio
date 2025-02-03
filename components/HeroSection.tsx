@@ -5,7 +5,6 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-// Define prop types for TypedText
 interface TypedTextProps {
   strings: string[];
   typingSpeed?: number;
@@ -13,7 +12,12 @@ interface TypedTextProps {
   delayBetweenStrings?: number;
 }
 
-const TypedText: React.FC<TypedTextProps> = ({ strings, typingSpeed = 150, deletingSpeed = 100, delayBetweenStrings = 1000 }) => {
+const TypedText: React.FC<TypedTextProps> = ({ 
+  strings, 
+  typingSpeed = 150, 
+  deletingSpeed = 100, 
+  delayBetweenStrings = 1000 
+}: TypedTextProps) => {
   const [currentStringIndex, setCurrentStringIndex] = useState(0)
   const [currentText, setCurrentText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
