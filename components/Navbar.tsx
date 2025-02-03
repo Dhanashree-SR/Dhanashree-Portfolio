@@ -39,19 +39,19 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
+      // Using getBoundingClientRect() to get the position relative to the viewport
       const rect = element.getBoundingClientRect();
-      const offset = rect.top + window.scrollY;  // Calculate the scroll position
+      const offset = rect.top + window.scrollY; // Calculate the scroll position
       const headerHeight = document.querySelector("nav")?.clientHeight || 0;
       window.scrollTo({ top: offset - headerHeight, behavior: "smooth" });
     }
     setIsMenuOpen(false);
   };
-  
+
   return (
     <nav className="bg-gray-900 shadow-md fixed top-0 w-full z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-
           {/* Logo */}
           <div className="flex items-center">
             <Image src="/my-profile-img.jpg" alt="Dhanashree S R" width={40} height={40} className="rounded-full" />
