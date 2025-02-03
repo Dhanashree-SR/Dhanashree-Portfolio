@@ -88,7 +88,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }} 
           className="flex mt-4"
         >
-          <a href="https://github.com/SR-Dhana-shree/" target="_blank" rel="noopener noreferrer" className="mr-4">
+          <a href="https://github.com/Dhanashree-SR/" target="_blank" rel="noopener noreferrer" className="mr-4">
             <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300">
               <Image src="/github.svg" alt="GitHub Logo" width={30} height={30} />
             </div>
