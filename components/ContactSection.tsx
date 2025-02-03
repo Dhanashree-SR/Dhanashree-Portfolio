@@ -14,7 +14,7 @@ const ContactSection = () => {
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.23105803586!2d79.87899115728099!3d13.04798594700017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1738318330908!5m2!1sen!2sin" width="100%" height="500" frameBorder="0" style={{ border: 0 }} allowFullScreen></iframe>
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.8 }} className="w-full lg:w-1/2 xl:w-1/2 p-6 pt-2">
-          <motion.img initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1 }} src="/contact us.svg" alt="Girl working on laptop" />
+          <motion.img initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1 }} src="/Contact us.svg" alt="Girl working on laptop" />
           <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.2 }} className="flex flex-col mt-8">
             <motion.h2 initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.4 }} className="text-3xl text-white font-bold mb-4">Get in Touch</motion.h2>
             <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 1.6 }} className="flex items-start justify-between flex-wrap">

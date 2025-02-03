@@ -16,7 +16,7 @@ const skills = [
   { name: "GitHub", logo: "/github.svg" },
   { name: "Canva", logo: "/canva-icon (1).svg" }, 
   { name: "VsCode", logo: "/vscode.svg" },
-  { name: "HTML", logo: "/html.svg" },
+  { name: "HTML", logo: "/HTML.svg" },
   { name: "CSS", logo: "/css.svg" }
 ]
 
