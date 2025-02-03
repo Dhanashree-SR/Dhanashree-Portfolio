@@ -97,7 +97,7 @@ const TimelineSection = () => {
                 <div className="w-6 h-6 absolute left-0 md:left-1/2 top-1/2 md:top-1/2 transform -translate-x-1/2 md:-translate-y-1/2 bg-blue-500 rounded-full z-10"></div>
                 <div
                   className={`w-full md:w-[calc(50%-1.5rem)] p-4 rounded-lg shadow-md bg-gray-800 ${
-                    index % 2 === 0 ? "md:ml-auto md:text-right" : ""
+                    index % 2 === 0 ? "md:ml-auto md:text-left" : ""
                   }`}
                 >
                   <h3 className="text-lg md:text-xl font-bold text-white">{item.title || item.degree}</h3>
