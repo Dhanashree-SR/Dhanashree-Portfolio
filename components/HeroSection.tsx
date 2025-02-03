@@ -12,15 +12,15 @@ interface TypedTextProps {
   delayBetweenStrings?: number;
 }
 
-function TypedText({ 
+const TypedText: React.FC<TypedTextProps> = ({ 
   strings, 
   typingSpeed = 150, 
   deletingSpeed = 100, 
   delayBetweenStrings = 1000 
-}: TypedTextProps) {
-  const [currentStringIndex, setCurrentStringIndex] = useState(0)
-  const [currentText, setCurrentText] = useState("")
-  const [isDeleting, setIsDeleting] = useState(false)
+}) => {
+  const [currentStringIndex, setCurrentStringIndex] = useState<number>(0)
+  const [currentText, setCurrentText] = useState<string>("")
+  const [isDeleting, setIsDeleting] = useState<boolean>(false)
 
   useEffect(() => {
     const currentString = strings[currentStringIndex]
@@ -61,7 +61,7 @@ const HeroSection: React.FC = () => {
           layout="fill" 
           objectFit="cover"
           objectPosition="left" 
-          priority
+          loading="eager"
         />
       </div>
       <div className="relative z-10 text-left">
@@ -88,18 +88,18 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.6 }} 
           className="flex mt-4"
         >
-          <a href="https://github.com/Dhanashree-SR/" target="_blank" rel="noopener noreferrer" className="mr-4">
-            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300">
+          <a href="https://github.com/SR-Dhana-shree/" target="_blank" rel="noopener noreferrer" className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
+            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
               <Image src="/github.svg" alt="GitHub Logo" width={30} height={30} />
             </div>
           </a>
-          <a href="mailto:dhanashreesr5@gmail.com" className="mr-4">
-            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300">
+          <a href="mailto:dhanashreesr5@gmail.com" className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
+            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
               <Image src="/gmail.svg" alt="Gmail Logo" width={30} height={30} />
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/dhanashree-sr/" target="_blank" rel="noopener noreferrer">
-            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300">
+          <a href="https://www.linkedin.com/in/dhanashree-sr/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
+            <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
               <Image src="/linkedin.svg" alt="LinkedIn Logo" width={30} height={30} />
             </div>
           </a>
@@ -111,7 +111,7 @@ const HeroSection: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }} 
           className="mt-8"
         >
-          <a href="/Dhanashree_S_R_da.pdf" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+          <a href="/Dhanashree_S_R_Resume.pdf" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
             <FontAwesomeIcon icon={faArrowDown} className="mr-2" /> Download Resume
           </a>
         </motion.div>
