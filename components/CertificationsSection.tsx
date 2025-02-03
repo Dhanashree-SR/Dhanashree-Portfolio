@@ -5,9 +5,18 @@ import { useInView } from "react-intersection-observer"
 import { ExternalLink } from "lucide-react"
 import { motion } from "framer-motion"
 
-const certifications = [
+// Define the type for a certification
+interface Certification {
+  name: string
+  image: string
+  overview: string
+  link: string
+}
+
+// Certification data
+const certifications: Certification[] = [
   {
-    name: "Data cleaning Certification",
+    name: "Data Cleaning Certification",
     image: "/Data-clean.jpg",
     overview: "Learned essential techniques for cleaning and transforming raw data into accurate, structured formats for reliable analysis and decision-making.",
     link: "https://training.foresightbi.com.ng/certificates/yucdugxpnq",
@@ -32,7 +41,14 @@ const certifications = [
   },
 ]
 
-const CertificationCard = ({ cert, index }) => {
+// Define props for CertificationCard
+interface CertificationCardProps {
+  cert: Certification
+  index: number
+}
+
+// Certification Card Component
+const CertificationCard: React.FC<CertificationCardProps> = ({ cert, index }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -71,7 +87,8 @@ const CertificationCard = ({ cert, index }) => {
   )
 }
 
-const CertificationsSection = () => {
+// Certifications Section Component
+const CertificationsSection: React.FC = () => {
   return (
     <section id="certifications" className="py-16 bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-justify">
@@ -94,4 +111,3 @@ const CertificationsSection = () => {
 }
 
 export default CertificationsSection
-
