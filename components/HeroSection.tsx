@@ -94,7 +94,7 @@ const HeroSection: React.FC = () => {
           I'm a{" "}
           <span className="text-yellow-300 font-bold">
             <TypedText
-              strings={["Data Analyst", "SQL Developer"]}
+              strings={["Data Analyst", "PL/SQL Developer"]}
               typingSpeed={100}
               deletingSpeed={50}
               delayBetweenStrings={2000}
