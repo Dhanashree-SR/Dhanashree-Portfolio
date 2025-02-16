@@ -22,7 +22,7 @@ const ContactSection = () => {
                 {/* <motion.p initial={{ opacity: 0, y: -50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 2 }} className="text-white text-lg">Reach me out</motion.p> */}
                 <motion.div initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 2 }} className="flex space-x-4 mt-2">
                   <motion.a initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration : 0.8, delay: 2.2 }} 
-                    href="https://github.com/SR-Dhana-shree/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
+                    href="https://github.com/Dhanashree-SR/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out">
                     <div className="rounded-full bg-white p-2 hover:bg-yellow-200 transition-all duration-300 ease-in-out">
                       <img src="/github.svg" alt="GitHub Logo" className="w-8 h-8" />
                     </div>

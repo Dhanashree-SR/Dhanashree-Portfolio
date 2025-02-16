@@ -116,7 +116,7 @@ const HeroSection: React.FC = () => {
           className="flex mt-4"
         >
           <a
-            href="https://github.com/SR-Dhana-shree/"
+            href="https://github.com/Dhanashree-SR/"
             target="_blank"
             rel="noopener noreferrer"
             className="mr-4 text-gray-300 hover:text-yellow-300 transition-all duration-300 ease-in-out"
