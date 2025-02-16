@@ -153,7 +153,7 @@ const HeroSection: React.FC = () => {
         >
           <a
             href="/Dhanashree S R.pdf"
-            target="_blank"
+            target="_new"
             download
             className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
           >
