@@ -152,7 +152,8 @@ const HeroSection: React.FC = () => {
           className="mt-8"
         >
           <a
-            href="https://docs.google.com/document/d/1VaFuswG4CCy9Etk0fUcNFcWNlH4D_6nXbSmkZVn3_j4/edit?usp=sharing&usp=embed_facebook"
+            href="/Dhanashree S R.pdf"
+            target="_blank"
             download
             className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center"
           >

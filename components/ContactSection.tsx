@@ -39,7 +39,7 @@ const ContactSection = () => {
                   </motion.a>
                 </motion.div>
               </motion.div>
-              <motion.a initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 2.8 }} href="https://docs.google.com/document/d/1VaFuswG4CCy9Etk0fUcNFcWNlH4D_6nXbSmkZVn3_j4/edit?usp=sharing&usp=embed_facebook" download className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-4">
+              <motion.a initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 2.8 }} href="/Dhanashree S R.pdf" download target= "_blank" className="bg-yellow-300 hover:bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mt-4">
                 <FontAwesomeIcon icon={faArrowDown} className="mr-2" /> Download Resume
               </motion.a>
             </motion.div>
