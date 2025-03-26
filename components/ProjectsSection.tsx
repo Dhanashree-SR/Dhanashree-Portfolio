@@ -7,6 +7,27 @@ import { motion } from "framer-motion"
 
 const projects = [
   {
+    title: "Maven Roasters Coffee Dashboard ",
+    description: "An interactive Excel dashboard to track key business metrics, including monthly revenue, transaction trends, and product performance. The dashboard helps the business optimize operations, boost sales, and enhance customer experience by providing actionable insights for growth and efficiency.",
+    image: "/coffee-dashboard.jpeg",
+    technologies: ["Excel"],
+    githubUrl: "https://github.com/Dhanashree-SR/Maven-Roasters-Coffee-Shop-Dashboard",
+  },
+  {
+    title: "Superstore Sales Report ",
+    description: "An interactive Power BI dashboard that visualizes key business metrics for a superstore, including total sales, product performance, and regional trends. The report provides actionable insights into sales performance, helping the business optimize operations, increase sales, and improve customer satisfaction by tracking trends and identifying areas for growth.",
+    image: "/Superstore_report.jpg",
+    technologies: ["Power BI"],
+    githubUrl: "https://github.com/Dhanashree-SR/Superstore-Sales-Report",
+  },
+  {
+    title: "Restaurant Order Analysis using SQL",
+    description: "A database-driven project managing ticket bookings for events or transportation, featuring table creation and normalization, CRUD (Create, Read, Update, Delete) operations, joins and subqueries for data retrieval, and constraints for data integrity, providing a robust and efficient system for managing ticket bookings using SQL.",
+    image: "/Restaurant Order Analysis.png",
+    technologies: ["SQL"],
+    githubUrl: "https://github.com/Dhanashree-SR/Restaurant-Order-Analysis",
+  },
+  {
     title: "Student Information System",
     description: "A Python-based mini project designed to simplify student registration. It features a user-friendly interface, student data storage using SQLite, basic input validation, and easy registration and data management for a seamless experience.",
     image: "/student-info-system.jpeg",
@@ -33,22 +54,7 @@ const projects = [
     image: "/voice-to-search.jpeg",
     technologies: ["Python"],
     githubUrl: "https://github.com/Dhanashree-SR/voice_to_search",
-  },
-  {
-    title: "Maven Roasters Coffee Dashboard ",
-    description: "An interactive Excel dashboard to track key business metrics, including monthly revenue, transaction trends, and product performance. The dashboard helps the business optimize operations, boost sales, and enhance customer experience by providing actionable insights for growth and efficiency.",
-    image: "/coffee-dashboard.jpeg",
-    technologies: ["Excel"],
-    githubUrl: "https://github.com/Dhanashree-SR/Maven-Roasters-Coffee-Shop-Dashboard",
-  },
-  {
-    title: "Superstore Sales Report ",
-    description: "An interactive Power BI dashboard that visualizes key business metrics for a superstore, including total sales, product performance, and regional trends. The report provides actionable insights into sales performance, helping the business optimize operations, increase sales, and improve customer satisfaction by tracking trends and identifying areas for growth.",
-    image: "/Superstore_report.jpg",
-    technologies: ["Power BI"],
-    githubUrl: "https://github.com/Dhanashree-SR/Superstore-Sales-Report",
-  },
-  
+  }
 ]
 
 const ProjectsSection = () => { 
