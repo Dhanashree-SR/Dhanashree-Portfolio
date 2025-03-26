@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Restaurant Order Analysis using SQL",
-    description: "A database-driven project managing ticket bookings for events or transportation, featuring table creation and normalization, CRUD (Create, Read, Update, Delete) operations, joins and subqueries for data retrieval, and constraints for data integrity, providing a robust and efficient system for managing ticket bookings using SQL.",
+    description: "A database-driven project managing ticket bookings for events or transportation, featuring table creation and normalization, CRUD (Create, Read, Update, Delete) operations, joins and subqueries for data retrieval, and constraints for data integrity, providing a robust and efficient system for managing ticket bookings using SQL. ",
     image: "/Restaurant Order Analysis.png",
     technologies: ["SQL"],
     githubUrl: "https://github.com/Dhanashree-SR/Restaurant-Order-Analysis",
