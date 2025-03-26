@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 const projects = [
   {
     title: "Maven Roasters Coffee Dashboard ",
-    description: "An interactive Excel dashboard to track key business metrics, including monthly revenue, transaction trends, and product performance. The dashboard helps the business optimize operations, boost sales, and enhance customer experience by providing actionable insights for growth and efficiency.",
+    description: "A SQL-based restaurant order analysis to uncover key insights on menu performance, customer preferences, and high-value orders. Using MySQL, this project helps optimize pricing, improve menu offerings, and enhance customer experience with data-driven decisions.",
     image: "/coffee-dashboard.jpeg",
     technologies: ["Excel"],
     githubUrl: "https://github.com/Dhanashree-SR/Maven-Roasters-Coffee-Shop-Dashboard",
