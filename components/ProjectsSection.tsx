@@ -27,34 +27,34 @@ const projects = [
     technologies: ["SQL"],
     githubUrl: "https://github.com/Dhanashree-SR/Restaurant-Order-Analysis",
   },
-  {
-    title: "Student Information System",
-    description: "A Python-based mini project designed to simplify student registration. It features a user-friendly interface, student data storage using SQLite, basic input validation, and easy registration and data management for a seamless experience.",
-    image: "/student-info-system.jpeg",
-    technologies: ["Python"],
-    githubUrl: "https://github.com/SR-Dhana-shree/Student_information_using-python",
-  },
-  {
-    title: "E ticket Booking Database",
-    description: "A database-driven project managing ticket bookings for events or transportation, featuring table creation and normalization, CRUD (Create, Read, Update, Delete) operations, joins and subqueries for data retrieval, and constraints for data integrity, providing a robust and efficient system for managing ticket bookings using SQL.",
-    image: "/E Ticket Booking Database.png",
-    technologies: ["SQL"],
-    githubUrl: "https://github.com/Dhanashree-SR/E-ticket-Booking-using-SQL",
-  },
-  {
-    title: "Text to speech",
-    description: "A Python-based project that converts text into audio, making written content more accessible. Ideal for visually impaired individuals, language learners, audiobooks, podcasts, and multimedia enhancements.",
-    image: "/txt-to-speech.jpeg",
-    technologies: ["Python"],
-    githubUrl: "https://github.com/Dhanashree-SR/Text_to_speech",
-  },
-  {
-    title: "Voice to Search",
-    description: "A hands-free search tool powered by Python. Simply speak your query and receive relevant search results instantly. Features include accurate speech recognition, fast results, and a user-friendly interface, with potential applications in smart homes, vehicles, and accessibility.",
-    image: "/voice-to-search.jpeg",
-    technologies: ["Python"],
-    githubUrl: "https://github.com/Dhanashree-SR/voice_to_search",
-  }
+  // {
+  //   title: "Student Information System",
+  //   description: "A Python-based mini project designed to simplify student registration. It features a user-friendly interface, student data storage using SQLite, basic input validation, and easy registration and data management for a seamless experience.",
+  //   image: "/student-info-system.jpeg",
+  //   technologies: ["Python"],
+  //   githubUrl: "https://github.com/SR-Dhana-shree/Student_information_using-python",
+  // },
+  // {
+  //   title: "E ticket Booking Database",
+  //   description: "A database-driven project managing ticket bookings for events or transportation, featuring table creation and normalization, CRUD (Create, Read, Update, Delete) operations, joins and subqueries for data retrieval, and constraints for data integrity, providing a robust and efficient system for managing ticket bookings using SQL.",
+  //   image: "/E Ticket Booking Database.png",
+  //   technologies: ["SQL"],
+  //   githubUrl: "https://github.com/Dhanashree-SR/E-ticket-Booking-using-SQL",
+  // },
+  // {
+  //   title: "Text to speech",
+  //   description: "A Python-based project that converts text into audio, making written content more accessible. Ideal for visually impaired individuals, language learners, audiobooks, podcasts, and multimedia enhancements.",
+  //   image: "/txt-to-speech.jpeg",
+  //   technologies: ["Python"],
+  //   githubUrl: "https://github.com/Dhanashree-SR/Text_to_speech",
+  // },
+  // {
+  //   title: "Voice to Search",
+  //   description: "A hands-free search tool powered by Python. Simply speak your query and receive relevant search results instantly. Features include accurate speech recognition, fast results, and a user-friendly interface, with potential applications in smart homes, vehicles, and accessibility.",
+  //   image: "/voice-to-search.jpeg",
+  //   technologies: ["Python"],
+  //   githubUrl: "https://github.com/Dhanashree-SR/voice_to_search",
+  // }
 ]
 
 const ProjectsSection = () => { 
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
           Projects
         </motion.h2>
         <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-8">
-          {["All", "SQL", "Python", "Excel", "Power BI"].map((tech) => (
+          {["All", "SQL", "Excel", "Power BI"].map((tech) => (
             <motion.button
               key={tech}
               onClick={() => setFilter(tech)}
