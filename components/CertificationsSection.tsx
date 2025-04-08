@@ -16,6 +16,12 @@ interface Certification {
 // Certification data
 const certifications: Certification[] = [
   {
+    name: "Data Analytics Job Simulation - Deloitte",
+    image: "/Deloitte Job Sim.jpg",
+    overview: "Completed a Deloitte job simulation involving data analysis and forensic technology, Created a data dashboard using Tableau, Used Excel to classify data and draw business conclusions",
+    link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_K5dz5CJN3nM43qX2u_1744044135010_completion_certificate.pdf",
+  },
+  {
     name: "Data Cleaning Certification",
     image: "/Data-clean.jpg",
     overview: "Learned essential techniques for cleaning and transforming raw data into accurate, structured formats for reliable analysis and decision-making.",
