@@ -30,7 +30,7 @@ const projects = [
     {
     title: "Lego Set Explorer Dashboard ",
     description: "An interactive Power BI dashboard that lets users explore 4,000+ LEGO sets by age, theme, and piece count using slicers, bookmarks, and custom tooltips. Built as part of Maven Analytics' guided project to demonstrate skills in DAX, data storytelling, and dynamic UI design.",
-    image: "/Lego-Finder.jpg.jpg",
+    image: "/Lego-Finder.jpg",
     technologies: ["Power BI"],
     githubUrl: "https://github.com/Dhanashree-SR/Lego_Set_Explorer/",
   },
