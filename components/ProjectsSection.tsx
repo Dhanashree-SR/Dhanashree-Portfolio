@@ -27,6 +27,13 @@ const projects = [
     technologies: ["SQL"],
     githubUrl: "https://github.com/Dhanashree-SR/Restaurant-Order-Analysis",
   },
+    {
+    title: "Lego Set Explorer Dashboard ",
+    description: "An interactive Power BI dashboard that lets users explore 4,000+ LEGO sets by age, theme, and piece count using slicers, bookmarks, and custom tooltips. Built as part of Maven Analytics' guided project to demonstrate skills in DAX, data storytelling, and dynamic UI design.",
+    image: "/Lego-Finder.jpg.jpg",
+    technologies: ["Power BI"],
+    githubUrl: "https://github.com/Dhanashree-SR/Lego_Set_Explorer/",
+  },
   // {
   //   title: "Student Information System",
   //   description: "A Python-based mini project designed to simplify student registration. It features a user-friendly interface, student data storage using SQLite, basic input validation, and easy registration and data management for a seamless experience.",
