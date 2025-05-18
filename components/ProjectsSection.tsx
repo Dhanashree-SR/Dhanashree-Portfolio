@@ -27,12 +27,19 @@ const projects = [
     technologies: ["SQL"],
     githubUrl: "https://github.com/Dhanashree-SR/Restaurant-Order-Analysis",
   },
-    {
+  {
     title: "Lego Set Explorer Dashboard ",
     description: "An interactive Power BI dashboard that lets users explore 4,000+ LEGO sets by age, theme, and piece count using slicers, bookmarks, and custom tooltips. Built as part of Maven Analytics' guided project to demonstrate skills in DAX, data storytelling, and dynamic UI design.",
     image: "/Lego-Finder.jpg",
     technologies: ["Power BI"],
     githubUrl: "https://github.com/Dhanashree-SR/Lego_Set_Explorer/",
+  },
+  {
+    title: "CRM Sales Dashboard",
+    description: "Built a no-code CRM Sales Dashboard in Google Sheets that turns raw sales data into real-time insights with visual KPIs, conditional formatting, and agent-level performance tracking.",
+    image: "/CRM Sales Dashboard.jpg",
+    technologies: ["Power BI"],
+    githubUrl: "https://github.com/Dhanashree-SR/CRM_Sales_Dashboard/",
   },
   // {
   //   title: "Student Information System",
