@@ -38,7 +38,6 @@ const projects = [
     title: "CRM Sales Dashboard",
     description: "Built a no-code CRM Sales Dashboard in Google Sheets that turns raw sales data into real-time insights with visual KPIs, conditional formatting, and agent-level performance tracking.",
     image: "/CRM Sales Dashboard.jpg",
-    technologies: ["Power BI"],
     githubUrl: "https://github.com/Dhanashree-SR/CRM_Sales_Dashboard/",
   },
   // {
